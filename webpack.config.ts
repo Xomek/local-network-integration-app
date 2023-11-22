@@ -31,7 +31,13 @@ const config: webpack.Configuration = {
 
       {
         test: /\.scss$/i,
-        use: [MiniCssExtractPlugin.loader, "css-loader", "sass-loader"],
+        use: [
+          MiniCssExtractPlugin.loader,
+          {
+            loader: "css-loader",
+          },
+          "sass-loader",
+        ],
       },
 
       {
@@ -63,7 +69,9 @@ const config: webpack.Configuration = {
       directory: path.resolve(__dirname, "public", "index.html"),
     },
     port: 3000,
+    allowedHosts: ["all"],
     open: true,
+    historyApiFallback: true,
   },
 };
 

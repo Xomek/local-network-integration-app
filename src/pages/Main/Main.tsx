@@ -1,5 +1,11 @@
+import { Header } from "widgets";
+
 const Main: React.FC = () => {
-  return <div></div>;
+  return (
+    <div className="container">
+      <Header />
+    </div>
+  );
 };
 
 export default Main;
