@@ -3,6 +3,7 @@ import cn from "classnames";
 import styles from "./Switch.module.scss";
 
 const Switch: React.FC<SwitchProps> = ({
+  className,
   checked,
   onChange,
   labelOptions,
@@ -10,7 +11,7 @@ const Switch: React.FC<SwitchProps> = ({
 }) => {
   return (
     <button
-      className={cn(styles.wrapper, { [styles.disabled]: disabled })}
+      className={cn(styles.wrapper, className, { [styles.disabled]: disabled })}
       disabled={disabled}
     >
       {labelOptions.position === "left" && (

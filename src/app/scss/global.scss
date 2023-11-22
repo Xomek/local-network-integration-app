@@ -5,3 +5,26 @@ body {
 .container {
   padding: 0 15px;
 }
+
+.section {
+  margin-bottom: 50px;
+}
+
+.section-title {
+  font-size: 16px;
+  font-weight: 700;
+  color: $primary-text;
+}
+
+.dfac {
+  display: flex;
+  align-items: center;
+}
+
+.mb-20 {
+  margin-bottom: 20px;
+}
+
+.gap-20 {
+  gap: 20px;
+}

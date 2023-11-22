@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Switch } from "shared";
+import { Switch } from "shared/ui";
 import styles from "./Header.module.scss";
 
 const Header: React.FC = () => {

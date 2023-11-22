@@ -1,0 +1,34 @@
+@import "../../../app/scss/palette.scss";
+
+.button {
+  font-family: "Roboto", sans-serif;
+  padding: 10px;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.16px;
+  min-width: 100px;
+  background-color: $primary;
+  border: none;
+  cursor: pointer;
+
+  &.contained {
+    color: #fff;
+  }
+
+  &.outlined {
+  }
+
+  &.text {
+  }
+
+  &.icon {
+    display: flex;
+    border-radius: 50%;
+    min-width: 30px;
+  }
+
+  &:disabled {
+    background-color: $disabled;
+  }
+}
