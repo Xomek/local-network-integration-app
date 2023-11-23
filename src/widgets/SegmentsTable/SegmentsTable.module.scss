@@ -1,0 +1,27 @@
+.head {
+  height: 55px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  padding: 0 30px;
+
+  div {
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.56);
+  }
+}
+
+.row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  padding: 0 30px;
+  height: 50px;
+  border-top: 1px solid #e0e0e0;
+  border-bottom: 1px solid #e0e0e0;
+
+  div {
+    color: rgba(0, 0, 0, 0.87);
+    font-size: 15px;
+  }
+}

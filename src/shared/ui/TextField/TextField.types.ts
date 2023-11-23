@@ -1,6 +1,4 @@
-export interface TextFieldProps {
-  value: string;
-  onChange: () => void;
+export interface TextFieldProps
+  extends React.InputHTMLAttributes<HTMLInputElement> {
   label?: string;
-  disabled?: boolean;
 }

@@ -1,25 +1,23 @@
-import { Header } from "widgets";
 import { Button } from "shared/ui";
-import PlusIcon from "shared/assets/icons/plus.svg";
+import { AddSegment } from "features";
+import { Header, SegmentForm, SegmentsTable } from "widgets";
 
 const Main: React.FC = () => {
   return (
     <div className="container">
       <Header />
 
-      <div className="section dfac gap-20">
-        <div className="section-title">Добавить сегмент</div>
-        <Button variant="icon">
-          <PlusIcon />
-        </Button>
-      </div>
+      <AddSegment />
 
       <div className="section">
         <div className="section-title mb-20">Удаленные сегменты</div>
+        <SegmentsTable />
       </div>
 
       <div className="section">
         <div className="section-title mb-20">Локальный сегмент</div>
+
+        <SegmentForm />
 
         <div className="dfac gap-20">
           <Button>Сохранить</Button>

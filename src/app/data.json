@@ -1,0 +1,53 @@
+{
+  "settings": {
+    "enabled": false,
+    "iface": "",
+    "local_address": "",
+    "local_port": 0,
+    "mac_ttl": 300,
+    "unicast": "drop",
+    "remote": []
+  },
+  "interfaces": [
+    {
+      "id": "eth0",
+      "type": "eth",
+      "address": "192.168.56.100",
+      "mask": "255.255.255.0",
+      "class": "access",
+      "speed": "10000Mb/s",
+      "duplex": "full",
+      "parent_id": ""
+    },
+    {
+      "id": "eth1",
+      "type": "eth",
+      "address": "",
+      "mask": "",
+      "class": "access",
+      "speed": "10000Mb/s",
+      "duplex": "full",
+      "parent_id": ""
+    },
+    {
+      "id": "eth3",
+      "type": "eth",
+      "address": "",
+      "mask": "",
+      "class": "access",
+      "speed": "10000Mb/s",
+      "duplex": "full",
+      "parent_id": ""
+    },
+    {
+      "id": "eth3",
+      "type": "eth",
+      "address": "",
+      "mask": "",
+      "class": "access",
+      "speed": "10000Mb/s",
+      "duplex": "full",
+      "parent_id": ""
+    }
+  ]
+}

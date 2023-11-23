@@ -3,10 +3,10 @@ import styles from "./TextField.module.scss";
 
 const TextField: React.FC<TextFieldProps> = ({ label, ...props }) => {
   return (
-    <label>
+    <label className={styles.textField}>
       {label && <span className={styles.label}>{label}</span>}
 
-      <input type="text" {...props} />
+      <input className={styles.field} type="text" {...props} />
     </label>
   );
 };
