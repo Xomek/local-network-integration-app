@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Switch } from "shared/ui";
 
 const SwitchServices: React.FC = () => {
-  const [isEnabled, setIsEnabled] = useState(false);
+  const [isEnabled, setIsEnabled] = useState(true);
 
   const handleSwitch = () => {
     setIsEnabled((prevState) => !prevState);
@@ -16,7 +16,7 @@ const SwitchServices: React.FC = () => {
       }}
       checked={isEnabled}
       onChange={handleSwitch}
-      disabled={false}
+      disabled={true}
     />
   );
 };

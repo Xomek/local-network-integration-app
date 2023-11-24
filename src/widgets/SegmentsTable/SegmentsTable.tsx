@@ -1,6 +1,8 @@
+import Row from "./Row";
+import { SegmentsTableProps } from "./SegmentsTable.types";
 import styles from "./SegmentsTable.module.scss";
 
-const SegmentsTable: React.FC = () => {
+const SegmentsTable: React.FC<SegmentsTableProps> = () => {
   return (
     <div>
       <div className={styles.head}>
@@ -9,10 +11,8 @@ const SegmentsTable: React.FC = () => {
       </div>
 
       <div className={styles.body}>
-        <div className={styles.row}>
-          <div>1.1.1.1</div>
-          <div>90</div>
-        </div>
+        <Row segment={{ ip: "1.1.1.1", port: 3000 }} />
+        <Row segment={{ ip: "2.2.2.2", port: 3001 }} />
       </div>
 
       {/* <div>Удаленные сегменты не заданы</div> */}

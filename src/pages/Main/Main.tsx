@@ -18,11 +18,6 @@ const Main: React.FC = () => {
         <div className="section-title mb-20">Локальный сегмент</div>
 
         <SegmentForm />
-
-        <div className="dfac gap-20">
-          <Button>Сохранить</Button>
-          <Button>Отмена</Button>
-        </div>
       </div>
     </div>
   );

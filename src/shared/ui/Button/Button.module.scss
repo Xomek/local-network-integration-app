@@ -9,8 +9,14 @@
   letter-spacing: 0.16px;
   min-width: 100px;
   background-color: $primary;
+  transition: background-color 0.2s;
   border: none;
   cursor: pointer;
+
+  &:hover {
+    transition: background-color 0.2s;
+    background-color: darken($primary, 5);
+  }
 
   &.contained {
     color: #fff;
@@ -29,6 +35,8 @@
   }
 
   &:disabled {
-    background-color: $disabled;
+    color: $disabled-text;
+    background-color: #e6e6e6;
+    cursor: default;
   }
 }

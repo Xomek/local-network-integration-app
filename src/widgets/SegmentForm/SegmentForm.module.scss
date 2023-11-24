@@ -4,20 +4,28 @@
 
 .item {
   display: grid;
-  grid-template-columns: 3fr 1fr;
-  justify-content: space-between;
-  gap: 30px;
+  grid-template-columns: 300px 400px;
+  align-items: center;
   margin-bottom: 20px;
 
-  div {
-    width: 100%;
-  }
-
-  &:last-child {
+  &:nth-last-child(2) {
     margin-bottom: 40px;
   }
 }
 
 .itemTitle {
   font-size: 15px;
+}
+
+.radio {
+  margin-bottom: 12px;
+}
+
+.numberInput {
+  flex-shrink: 0;
+  width: 100px;
+}
+
+.select {
+  width: 100%;
 }
