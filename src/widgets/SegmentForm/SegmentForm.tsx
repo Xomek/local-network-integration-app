@@ -68,7 +68,7 @@ const SegmentsForm: React.FC = () => {
       </div>
 
       <div className="dfac gap-20">
-        <Button disabled>Сохранить</Button>
+        <Button>Сохранить</Button>
         <Button>Отмена</Button>
       </div>
     </form>

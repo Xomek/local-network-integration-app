@@ -1,0 +1,24 @@
+.row {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  padding: 0 30px;
+  min-height: 70px;
+  border-bottom: 1px solid #e0e0e0;
+  cursor: pointer;
+
+  div {
+    color: rgba(0, 0, 0, 0.87);
+    font-size: 15px;
+  }
+}
+
+.actions {
+  position: absolute;
+  right: 30px;
+
+  svg + svg {
+    margin-left: 15px;
+  }
+}

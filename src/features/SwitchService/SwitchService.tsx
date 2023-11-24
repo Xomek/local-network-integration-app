@@ -14,7 +14,7 @@ const SwitchService: React.FC = () => {
       }}
       checked={settings.enabled}
       onChange={switchService}
-      disabled={true}
+      disabled={false}
     />
   );
 };

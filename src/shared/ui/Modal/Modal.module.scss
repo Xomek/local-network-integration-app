@@ -26,10 +26,17 @@
 }
 
 .title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   font-weight: 700;
   letter-spacing: 1px;
   font-size: 20px;
   border-bottom: 2px solid #cdd3d8;
   margin-bottom: 20px;
   padding-bottom: 20px;
+
+  svg {
+    cursor: pointer;
+  }
 }

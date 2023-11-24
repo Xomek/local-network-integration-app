@@ -1,6 +1,6 @@
 import Header from "./Header";
 import SegmentsTable from "./SegmentsTable";
 import SegmentForm from "./SegmentForm";
-import AddSegmentForm from "./AddSegmentForm";
+import CreateSegmentForm from "./CreateSegmentForm";
 
-export { Header, SegmentsTable, SegmentForm, AddSegmentForm };
+export { Header, SegmentsTable, SegmentForm, CreateSegmentForm };

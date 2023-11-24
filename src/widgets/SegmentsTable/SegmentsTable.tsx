@@ -2,9 +2,10 @@ import Row from "./Row";
 import { SegmentsTableProps } from "./SegmentsTable.types";
 import { useAppSelector } from "app/store/hooks";
 import styles from "./SegmentsTable.module.scss";
+import CreateSegmentForm from "widgets/CreateSegmentForm";
 
 const SegmentsTable: React.FC<SegmentsTableProps> = () => {
-  const { segments } = useAppSelector((state) => state.segments);
+  const { segments, segmentForms } = useAppSelector((state) => state.segments);
 
   return (
     <div>
@@ -21,6 +22,10 @@ const SegmentsTable: React.FC<SegmentsTableProps> = () => {
             Удаленные сегменты не заданы
           </div>
         )}
+
+        {segmentForms.map((_, index) => (
+          <CreateSegmentForm key={index} index={index} />
+        ))}
       </div>
     </div>
   );
