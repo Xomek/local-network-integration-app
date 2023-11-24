@@ -1,8 +1,11 @@
 import Row from "./Row";
 import { SegmentsTableProps } from "./SegmentsTable.types";
+import { useAppSelector } from "app/store/hooks";
 import styles from "./SegmentsTable.module.scss";
 
 const SegmentsTable: React.FC<SegmentsTableProps> = () => {
+  const { segments } = useAppSelector((state) => state.segments);
+
   return (
     <div>
       <div className={styles.head}>
@@ -11,11 +14,14 @@ const SegmentsTable: React.FC<SegmentsTableProps> = () => {
       </div>
 
       <div className={styles.body}>
-        <Row segment={{ ip: "1.1.1.1", port: 3000 }} />
-        <Row segment={{ ip: "2.2.2.2", port: 3001 }} />
+        {segments ? (
+          segments.map((segment) => <Row key={segment.id} segment={segment} />)
+        ) : (
+          <div className={styles.notFoundSegments}>
+            Удаленные сегменты не заданы
+          </div>
+        )}
       </div>
-
-      {/* <div>Удаленные сегменты не заданы</div> */}
     </div>
   );
 };

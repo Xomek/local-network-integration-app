@@ -1,7 +1,10 @@
 import { configureStore } from "@reduxjs/toolkit";
+import segmentReducer from "entities/Segment/Segment.slice";
 
 const store = configureStore({
-  reducer: {},
+  reducer: {
+    segments: segmentReducer,
+  },
 });
 
 export type RootState = ReturnType<typeof store.getState>;

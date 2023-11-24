@@ -1,7 +1,9 @@
+import { Segment } from "shared/types";
+
 export interface SegmentsTableProps {
-  segments?: any[];
+  segments?: Segment[];
 }
 
 export interface RowProps {
-  segment: any;
+  segment: Segment;
 }

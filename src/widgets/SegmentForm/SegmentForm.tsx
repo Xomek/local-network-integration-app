@@ -11,8 +11,9 @@ const SegmentsForm: React.FC = () => {
         <Select
           className={styles.select}
           options={[]}
-          selectedOption={{ id: 0, name: "default" }}
+          selectedOption={{ id: 0, name: "" }}
           onSelect={() => {}}
+          placeholder="Выберите из списка"
         />
       </div>
 
@@ -25,12 +26,14 @@ const SegmentsForm: React.FC = () => {
             type="number"
             value=""
             onChange={() => {}}
+            placeholder="Порт"
           />
           <Select
             className={styles.select}
             options={[]}
-            selectedOption={{ id: 0, name: "default" }}
+            selectedOption={{ id: 0, name: "" }}
             onSelect={() => {}}
+            placeholder="Выберите из списка"
           />
         </div>
       </div>

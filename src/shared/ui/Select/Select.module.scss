@@ -1,7 +1,7 @@
 .select {
   position: relative;
   width: 200px;
-  color: #232323;
+  color: gray;
   user-select: none;
 }
 
@@ -12,11 +12,12 @@
 }
 
 .field {
+  color: gray;
   width: 100%;
   height: 100%;
   padding: 10px 10px 10px 15px;
   font-size: 18px;
-  border: 1px solid #232323;
+  border: 1px solid gray;
   border-radius: 8px;
   overflow: hidden;
   text-overflow: ellipsis;
