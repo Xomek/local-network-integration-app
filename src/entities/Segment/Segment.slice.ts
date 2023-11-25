@@ -18,7 +18,7 @@ const segmentSlice = createSlice({
     },
 
     addSegment(state) {
-      state.segmentForms.push({ ip: "", port: "" });
+      state.segmentForms.push({ address: "", mask: "" });
     },
 
     closeSegmentForm(state, action: PayloadAction<number>) {
@@ -27,10 +27,10 @@ const segmentSlice = createSlice({
       );
     },
 
-    saveSegment(state, action: PayloadAction<{ ip: string; port: string }>) {
+    saveSegment(state, action: PayloadAction<{ address: string; mask: string }>) {
       state.segments.push({
-        address: action.payload.ip,
-        mask: action.payload.port,
+        address: action.payload.address,
+        mask: action.payload.mask,
         class: "",
         duplex: "",
         id: "",

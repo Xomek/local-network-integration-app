@@ -1,8 +1,12 @@
+import { useState } from "react";
+import { FormValues } from "./SegmentForm.types";
 import { Button, Radio, Select, TextField } from "shared/ui";
 import cn from "classnames";
 import styles from "./SegmentForm.module.scss";
 
 const SegmentsForm: React.FC = () => {
+  const [form, setForm] = useState<FormValues>();
+
   return (
     <form className={styles.form}>
       <div className={styles.item}>
@@ -10,7 +14,11 @@ const SegmentsForm: React.FC = () => {
 
         <Select
           className={styles.select}
-          options={[]}
+          options={[
+            { id: 1, name: "тест" },
+            { id: 1, name: "тест" },
+            { id: 1, name: "тест" },
+          ]}
           selectedOption={{ id: 0, name: "" }}
           onSelect={() => {}}
           placeholder="Выберите из списка"
@@ -30,7 +38,11 @@ const SegmentsForm: React.FC = () => {
           />
           <Select
             className={styles.select}
-            options={[]}
+            options={[
+              { id: 1, name: "тест" },
+              { id: 1, name: "тест" },
+              { id: 1, name: "тест" },
+            ]}
             selectedOption={{ id: 0, name: "" }}
             onSelect={() => {}}
             placeholder="Выберите из списка"
@@ -57,7 +69,12 @@ const SegmentsForm: React.FC = () => {
         </div>
 
         <div>
-          <Radio className={styles.radio} name="unicast" label="drop" />
+          <Radio
+            className={styles.radio}
+            name="unicast"
+            label="drop"
+            defaultChecked
+          />
           <Radio className={styles.radio} name="unicast" label="broadcast" />
           <Radio
             className={styles.radio}

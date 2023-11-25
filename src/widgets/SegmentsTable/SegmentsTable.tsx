@@ -1,8 +1,8 @@
 import Row from "./Row";
 import { SegmentsTableProps } from "./SegmentsTable.types";
 import { useAppSelector } from "app/store/hooks";
-import styles from "./SegmentsTable.module.scss";
 import CreateSegmentForm from "widgets/CreateSegmentForm";
+import styles from "./SegmentsTable.module.scss";
 
 const SegmentsTable: React.FC<SegmentsTableProps> = () => {
   const { segments, segmentForms } = useAppSelector((state) => state.segments);

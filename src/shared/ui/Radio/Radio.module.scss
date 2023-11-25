@@ -9,26 +9,32 @@
 
 .input {
   display: none;
+
+  &:checked + .radio::before {
+    opacity: 1;
+    transition: opacity 0.2s;
+  }
 }
 
 .radio {
-  padding: 4px;
+  position: relative;
   width: 24px;
   height: 24px;
   border-radius: 50%;
   border: 2px solid $primary;
 
-  div {
-    width: 100%;
-    height: 100%;
+  &::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 14px;
+    height: 14px;
     border-radius: 50%;
-    background-color: transparent;
-  }
-
-  &.checked {
-    .circle {
-      background-color: $primary;
-    }
+    opacity: 0;
+    background-color: $primary;
+    transition: opacity 0.2s;
   }
 }
 
