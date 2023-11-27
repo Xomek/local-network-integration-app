@@ -1,4 +1,4 @@
-import { Segment } from "shared/types";
+import { Segment } from "app/types";
 
 export interface SegmentsTableProps {
   segments?: Segment[];

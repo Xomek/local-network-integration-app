@@ -1,4 +1,4 @@
-import { Segment, Settings } from "shared/types";
+import { Segment, Settings } from "app/types";
 
 export interface SegmentState {
   segments: Segment[];

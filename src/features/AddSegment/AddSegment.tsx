@@ -1,6 +1,6 @@
 import { Button } from "shared/ui";
-import { useActions } from "shared/hooks/useActions";
-import PlusIcon from "shared/assets/icons/plus.svg";
+import { useActions } from "shared/lib/hooks/useActions";
+import PlusIcon from "shared/ui/icons/plus.svg";
 
 const AddSegment: React.FC = () => {
   const { addSegment } = useActions();

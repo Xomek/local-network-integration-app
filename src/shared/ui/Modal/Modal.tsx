@@ -1,6 +1,6 @@
 import { createPortal } from "react-dom";
 import { ModalProps } from "./Modal.types";
-import CloseIcon from "shared/assets/icons/close.svg";
+import CloseIcon from "../icons/close.svg";
 import styles from "./Modal.module.scss";
 
 const Modal: React.FC<ModalProps> = ({ title, close, children }) => {

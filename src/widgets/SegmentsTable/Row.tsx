@@ -1,9 +1,9 @@
 import { useState } from "react";
 import { Button, Modal } from "shared/ui";
 import { RowProps } from "./SegmentsTable.types";
-import { useActions } from "shared/hooks/useActions";
-import EditIcon from "shared/assets/icons/edit.svg";
-import DeleteIcon from "shared/assets/icons/delete.svg";
+import { useActions } from "shared/lib/hooks/useActions";
+import EditIcon from "shared/ui/icons/edit.svg";
+import DeleteIcon from "shared/ui/icons/delete.svg";
 import CreateSegmentForm from "widgets/CreateSegmentForm";
 import styles from "./SegmentsTable.module.scss";
 

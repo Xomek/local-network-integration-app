@@ -1,6 +1,6 @@
 import { PayloadAction, createSlice } from "@reduxjs/toolkit";
 import { SegmentState } from "./Segment.types";
-import { Settings } from "shared/types";
+import { Settings } from "app/types";
 import data from "app/data.json";
 
 const initialState: SegmentState = {
@@ -27,7 +27,10 @@ const segmentSlice = createSlice({
       );
     },
 
-    saveSegment(state, action: PayloadAction<{ address: string; mask: string }>) {
+    saveSegment(
+      state,
+      action: PayloadAction<{ address: string; mask: string }>
+    ) {
       state.segments.push({
         address: action.payload.address,
         mask: action.payload.mask,
