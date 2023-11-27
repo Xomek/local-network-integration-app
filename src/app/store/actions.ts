@@ -1,5 +1,6 @@
-import { segmentActions } from "entities/Segment/Segment.slice";
+import { settingsActions } from "entities/settings/Settings.slice";
+import { segmentActions } from "entities/segment/Segment.slice";
 
-const AllActions = { ...segmentActions };
+const AllActions = { ...settingsActions, ...segmentActions };
 
 export default AllActions;

@@ -1,22 +1,16 @@
 import { PayloadAction, createSlice } from "@reduxjs/toolkit";
 import { SegmentState } from "./Segment.types";
-import { Settings } from "app/types";
 import data from "app/data.json";
 
 const initialState: SegmentState = {
   segments: data.interfaces || [],
   segmentForms: [],
-  settings: data.settings || ({} as Settings),
 };
 
 const segmentSlice = createSlice({
   name: "segment",
   initialState,
   reducers: {
-    switchService(state) {
-      state.settings.enabled = !state.settings.enabled;
-    },
-
     addSegment(state) {
       state.segmentForms.push({ address: "", mask: "" });
     },

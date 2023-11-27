@@ -3,7 +3,7 @@ import { useAppSelector } from "app/store/hooks";
 import { useActions } from "shared/lib/hooks/useActions";
 
 const SwitchService: React.FC = () => {
-  const { settings } = useAppSelector((state) => state.segments);
+  const { settings } = useAppSelector((state) => state.settings);
   const { switchService } = useActions();
 
   return (

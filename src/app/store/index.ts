@@ -1,8 +1,10 @@
 import { configureStore } from "@reduxjs/toolkit";
-import segmentReducer from "entities/Segment/Segment.slice";
+import settingsReducer from "entities/settings/Settings.slice";
+import segmentReducer from "entities/segment/Segment.slice";
 
 const store = configureStore({
   reducer: {
+    settings: settingsReducer,
     segments: segmentReducer,
   },
 });
