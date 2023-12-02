@@ -1,1 +1,1 @@
-export { default } from "./SwitchService";
+export { default } from "./ui/SwitchService";

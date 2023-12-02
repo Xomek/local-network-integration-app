@@ -1,6 +1,5 @@
 import { Switch } from "shared/ui";
-import { useAppSelector } from "app/store/hooks";
-import { useActions } from "shared/lib/hooks/useActions";
+import { useActions, useAppSelector } from "shared/lib/hooks";
 
 const SwitchService: React.FC = () => {
   const { settings } = useAppSelector((state) => state.settings);

@@ -1,4 +1,4 @@
-import { useAppDispatch } from "app/store/hooks";
+import { useAppDispatch } from ".";
 import { bindActionCreators } from "@reduxjs/toolkit";
 import AllActions from "app/store/actions";
 

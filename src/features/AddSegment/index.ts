@@ -1,1 +1,1 @@
-export { default } from "./AddSegment";
+export { default } from "./ui/AddSegment";

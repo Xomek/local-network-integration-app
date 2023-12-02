@@ -1,6 +1,6 @@
 import Row from "./Row";
 import { SegmentsTableProps } from "./SegmentsTable.types";
-import { useAppSelector } from "app/store/hooks";
+import { useAppSelector } from "shared/lib/hooks/";
 import CreateSegmentForm from "widgets/CreateSegmentForm";
 import styles from "./SegmentsTable.module.scss";
 
